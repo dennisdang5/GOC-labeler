@@ -14,7 +14,6 @@ import html
 import json
 import os
 import sys
-import time
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -179,8 +178,6 @@ def main() -> None:
     row = notes.iloc[i]
     row_id, text = int(row["ROW_ID"]), row["TEXT"]
     prev = done.get(row_id, {})
-    timer_key = f"opened_{row_id}"
-    st.session_state.setdefault(timer_key, time.time())
 
     def k(name: str) -> str:  # widget keys are per note so answers don't leak between notes
         return f"{name}_{row_id}"
@@ -199,11 +196,9 @@ def main() -> None:
                        "not saved yet. Click Save label to keep the change.")
 
         if st.button("Save label", type="primary", key=k("save")):
-            elapsed = (time.time() - st.session_state[timer_key]) / 60
             record = {
                 "row_id": row_id, "assignment": assignment, "goc_present": goc,
                 "annotator": annotator,
-                "minutes_spent": round(prev.get("minutes_spent", 0) + elapsed, 1),
                 "labeled_at": datetime.now(timezone.utc).isoformat(timespec="seconds"),
             }
             if goc is None:
@@ -218,7 +213,6 @@ def main() -> None:
                     LABEL_DIR.mkdir(parents=True, exist_ok=True)
                     with out.open("a", encoding="utf-8") as f:
                         f.write(label.model_dump_json() + "\n")
-                    st.session_state.pop(timer_key, None)
                     if i < n - 1:
                         st.session_state.idx = i + 1
                     st.rerun()

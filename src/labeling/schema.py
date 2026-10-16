@@ -13,5 +13,4 @@ class GOCLabel(BaseModel):
     assignment: str
     goc_present: Literal["yes", "no", "unclear"]  # "unclear" is shown to labelers as "unsure"
     annotator: str = Field(pattern=r"^[A-Za-z]{1,5}$")
-    minutes_spent: float = Field(ge=0)
     labeled_at: str

@@ -2,8 +2,7 @@
 # Labeling guide (project members)
 
 You label on **your own computer**, using **your own** MIMIC-III download. You receive only an
-ID file, and you send back only a label file. **Never send, paste, screenshot or upload note
-text** (email, Slack, Drive, GitHub, ChatGPT...). PhysioNet doesn't allow sharing MIMIC data
+ID file, and you send back only a label file. PhysioNet doesn't allow sharing MIMIC data
 within teams, even between credentialed users.
 
 ## One-time setup
@@ -35,7 +34,6 @@ within teams, even between credentialed users.
   sidebar, which shows your saved answer for each note. Pick the new answer and click **Save
   label** again. Your latest save is the one that counts. If you change an answer without saving,
   the app warns you.
-- Time spent is recorded automatically.
 
 ## Sending labels back
 Commit and push **only your own** `labels/<assignment>_<INITIALS>.jsonl` (`git add labels/<your file>`).
