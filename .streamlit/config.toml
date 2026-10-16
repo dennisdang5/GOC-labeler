@@ -1,0 +1,7 @@
+# Labeling app runs on this computer only.
+[server]
+address = "localhost"
+headless = true
+
+[browser]
+gatherUsageStats = false

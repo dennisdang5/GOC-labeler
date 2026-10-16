@@ -1,0 +1,5 @@
+duckdb
+pandas
+pyarrow
+pydantic>=2
+streamlit

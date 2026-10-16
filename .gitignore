@@ -1,0 +1,13 @@
+# MIMIC-III data: never committed (PhysioNet DUA). Each labeler uses their own download.
+data/**
+!data/**/
+!data/**/.gitkeep
+*.parquet
+*.csv
+*.csv.gz
+!assignments/*.csv
+
+.venv/
+__pycache__/
+*.py[cod]
+.idea/
