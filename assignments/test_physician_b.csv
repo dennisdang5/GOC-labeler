@@ -1,0 +1,51 @@
+ROW_ID,CATEGORY,n_chars,label_order
+568547,Physician ,6130,1
+439346,Physician ,10512,2
+322531,Physician ,11029,3
+645642,Social Work,3492,4
+598249,Physician ,11331,5
+36682,Discharge summary,16756,6
+678306,General,371,7
+531223,Social Work,2017,8
+424594,Physician ,6942,9
+473790,Social Work,4098,10
+724426,Physician ,7485,11
+625961,Physician ,6490,12
+37928,Discharge summary,12770,13
+13958,Discharge summary,7445,14
+702066,Physician ,1490,15
+479262,Physician ,10036,16
+725588,Physician ,11133,17
+401949,Physician ,13789,18
+546279,Social Work,2908,19
+496756,Physician ,7317,20
+18626,Discharge summary,4667,21
+724540,Physician ,17355,22
+37038,Discharge summary,11562,23
+505100,Physician ,3388,24
+345961,Social Work,5814,25
+34638,Discharge summary,19940,26
+462932,Social Work,1758,27
+314580,Physician ,5595,28
+582147,Physician ,8340,29
+421938,Physician ,6256,30
+534304,Physician ,8162,31
+576106,Physician ,7716,32
+598256,Physician ,10296,33
+504291,Physician ,6574,34
+543650,Physician ,6821,35
+476507,Physician ,5654,36
+401354,Physician ,6863,37
+450176,General,1076,38
+595712,Physician ,9330,39
+613118,Physician ,9540,40
+432996,Physician ,7289,41
+581274,Physician ,14024,42
+693824,Physician ,3388,43
+353208,Physician ,9601,44
+576211,General,1484,45
+358605,General,202,46
+667120,General,944,47
+580819,General,877,48
+410806,Physician ,5438,49
+495784,Physician ,15628,50

@@ -8,8 +8,7 @@ within teams, even between credentialed users.
 ## One-time setup
 1. Clone this repo and install (Python 3.11+):
    `python -m pip install -r requirements.txt`.
-2. Download `NOTEEVENTS.csv.gz` from Google Drive and
-   put it in `data/raw/noteevents/`.
+2. Download `NOTEEVENTS.csv.gz` from the Google Drive, and put it in `data/raw/noteevents/`.
 3. Your assignment is already in `assignments/` (IDs only): the physician uses
    `test_physician`; members use their `dev_` letter.
 4. From the repo root, run `streamlit run src/labeling/app.py`. A browser tab opens on
